@@ -1,5 +1,5 @@
 let url = window.location.href;
-let swDirect = "/miRepositorio/sw.js"
+let swDirect = "/first-pwa/sw.js"
 
 if(navigator.serviceWorker){
     console.log("SW Available");
