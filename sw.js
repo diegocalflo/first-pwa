@@ -10,12 +10,12 @@ self.addEventListener('activate', (event) =>{
 
 self.addEventListener('fetch', (event) => {
 
-    // if (event.request.url.includes('.jpg')) {
-    //     let newResp = fetch('/image/mango.jpg')
+    if (event.request.url.includes('.jpg')) {
+        let newResp = fetch('/first-pwa/image/mango.jpg')
 
-    //     console.log('Image');
-    //     event.respondWith(newResp);
-    // }
+        console.log('Image');
+        event.respondWith(newResp);
+    }
 
     if (event.request.url.includes('page.css')) {
 
